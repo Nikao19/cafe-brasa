@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f4f0e8">
+    <meta name="description" content="Café de especialidade, torra própria e bons encontros no centro de Maringá.">
+    <title>Brasa — café de especialidade em Maringá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="wrap bar">
+        <a class="logo" href="#inicio" aria-label="Brasa — início">brasa<span>.</span></a>
+        <nav id="nav" aria-label="Navegação principal" aria-hidden="true">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Nossa casa</a></li>
+                <li><a href="#contato">Visite</a></li>
+            </ul>
+        </nav>
+        <div class="tools">
+            <button class="iconbtn bag-button" id="open" aria-label="Abrir sacola">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8zM9 8V6a3 3 0 016 0v2"/></svg>
+                <span id="count">0</span>
+            </button>
+            <button class="iconbtn" id="burger" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="ph hero-photo" data-photo="hero" data-parallax aria-hidden="true"><small>foto: iced latte sobre pedra</small></div>
+        <div class="wrap hero-copy">
+            <p class="eyebrow hero-kicker">Café de origem · Maringá, PR</p>
+            <h1 id="hero-title" class="hero-title">
+                <span class="hero-line" id="inicio">Um bom café</span>
+                <span class="hero-line"><span class="script">muda o ritmo.</span></span>
+            </h1>
+            <p class="hero-description">Grãos de pequenos produtores, torra própria toda semana e tempo para apreciar cada gole.</p>
+            <div class="hero-actions">
+                <a class="btn btn-light" href="#cardapio">Descubra o cardápio <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="#sobre">Um pouco sobre nós <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-note"><span class="note-rule"></span>Feito com calma, desde 2019.</div>
+        </div>
+        <a class="hero-scroll" href="#cardapio" aria-label="Role para conhecer o cardápio"><span>Role para descobrir</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="menu-section" aria-labelledby="menu-title">
+        <div class="wrap">
+            <div class="section-topline" data-reveal><span>01 — Da nossa bancada</span><span>Torrado na casa, servido na hora</span></div>
+            <div class="head" data-reveal>
+                <h2 id="menu-title"><span id="cardapio">O cardápio</span><span class="script">pequenos rituais, bons ingredientes</span></h2>
+            </div>
+            <div class="filters" id="filters" role="group" aria-label="Filtrar itens por categoria"></div>
+            <div class="grid" id="grid" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <section class="feat" id="destaque" aria-labelledby="feature-title">
+        <div class="wrap">
+            <div class="feature-copy" data-reveal>
+                <p class="eyebrow">02 — Um favorito da casa</p>
+                <h2 id="feature-title"><span class="script">novidade da casa</span>Latte<br>de coco</h2>
+                <p class="feature-description">Espresso duplo, leite gelado e creme de coco queimado sobre gelo. Doce na medida, feito para os dias que pedem uma pausa.</p>
+                <dl>
+                    <div><dt>2 doses</dt><dd>de espresso</dd></div>
+                    <div><dt>300 ml</dt><dd>servido gelado</dd></div>
+                    <div><dt>Sem lactose</dt><dd>com bebida de coco</dd></div>
+                </dl>
+                <div class="buy"><span class="big">R$ 14,00</span><button class="btn" data-add="coco">Adicionar à sacola <span aria-hidden="true">↗</span></button></div>
+            </div>
+            <div class="ph feature-photo" data-photo="coco" data-parallax><small>foto: latte de coco com gelo</small><span class="photo-index">feito na hora · 01/03</span></div>
+        </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+        <div class="wrap">
+            <div class="about-photo ph" data-photo="sobre" data-parallax><small>foto: barista passando café</small><span class="photo-stamp">Pequenos lotes.<br>Grandes histórias.</span></div>
+            <div class="about-copy" data-reveal>
+                <p class="eyebrow">03 — Da origem à xícara</p>
+                <h2 id="about-title"><span id="sobre">Feito devagar,</span><br><span class="script">servido com carinho.</span></h2>
+                <p>A Brasa nasceu em 2019 num balcão de seis lugares. Hoje seguimos torrando em pequenos lotes e escolhendo cada café junto de quem planta.</p>
+                <p>Aqui, o espresso é curto, o filtrado é limpo e o pão de queijo sai quentinho do forno.</p>
+                <a class="btn btn-outline" href="#contato">Encontre seu lugar à mesa <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div class="footer-topline"><span id="contato">Um café para ficar na memória.</span><a href="#inicio">Voltar ao início ↑</a></div>
+        <div class="cols">
+            <div class="footer-brand"><a class="logo" href="#inicio">brasa<span>.</span></a><p>Café de especialidade.<br>Um lugar para chamar de seu.</p></div>
+            <div><h4>Explore</h4><ul><li><a href="#inicio">Início</a></li><li><a href="#cardapio">Cardápio</a></li><li><a href="#sobre">Nossa casa</a></li></ul></div>
+            <div><h4>Venha tomar um café</h4><ul><li>Centro, Maringá — PR</li><li>Seg a sáb, 7h às 19h</li><li>Dom, 8h às 14h</li></ul></div>
+            <div><h4>Fale com a gente</h4><ul><li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a></li><li><a href="https://wa.me/" target="_blank" rel="noreferrer">WhatsApp ↗</a></li></ul></div>
+        </div>
+        <div class="copy"><span>© Brasa Café — feito com cuidado em Maringá.</span><span>Uma marca fictícia para projeto de portfólio.</span></div>
+    </div>
+</footer>
+
+<div id="veil"></div>
+<aside id="cart" aria-label="Sacola de compras" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="top"><div><p class="eyebrow">Seu pedido</p><h2>Sua sacola</h2></div><button class="iconbtn" id="close" aria-label="Fechar sacola"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <ul id="items"></ul>
+    <div class="sub"><span>Subtotal</span><span id="sub">R$ 0,00</span></div>
+    <button class="btn" id="checkout">Finalizar pedido <span aria-hidden="true">↗</span></button>
+</aside>
+<div id="toast" role="status"></div>
+
+<script defer src="./node_modules/gsap/dist/gsap.min.js"></script>
+<script defer src="./node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+<script defer src="animations.js"></script>
+<script defer src="script.js"></script>
+</body>
+</html>
